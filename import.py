@@ -1,0 +1,1 @@
+text = "I'm a variable from the import module!"
