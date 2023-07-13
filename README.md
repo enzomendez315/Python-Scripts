@@ -4,6 +4,8 @@ This repository is a collection of scripts used to try features and experiment w
 ## Language Details
 A variable is created when you assign it a value. Variables never need to be declared ahead of time.
 
+Calling a class like a function generates instances of the new type, and the class's methods automatically receive the instance being processed by a given method call (in the `self` argument).
+
 ## Hierarchy
 - Programs are composed of modules.
 - Modules contain statements.
