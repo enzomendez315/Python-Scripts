@@ -8,20 +8,27 @@ decimal = 3.1415
 # Strings
 quot_string = "I'm a string"
 apos_string = 'I am a string too'
-text    # From import_ex module.
+text        # From import_ex module.
 byte_string = 'I am a byte string'
 
 # Lists []
 number_list = [1, 2, 3]
-builtin_list = list(range(10))
+constr_list = list(range(10))
 
-# Dictionaries {k:v}
+# Dictionaries {k: v}
 str_dictionary = {'food': 'pizza', 'movie': 'TopGun'}
-builtin_dictionary = dict(hours = 10)
+constr_dictionary = dict(hours = 10)
 
 # Tuples ()
 random_tuple = (1, 'hello', 4, 'U')
-builtin_tuple = tuple('hi')
+constr_tuple = tuple('hi')
 
 # Sets {}
 char_set = {'a', 'b', 'c'}
+
+# Booleans
+yes_bool = True
+no_bool = False
+
+# None
+null_type = None
