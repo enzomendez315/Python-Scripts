@@ -10,6 +10,13 @@ A variable is created when you assign it a value. Variables never need to be dec
 - Statements contain expressions.
 - Expressions create and process objects.
 
+## Built-in Types
+### Lists
+Lists are positionally ordered collections of arbitrarily typed object, and they have no fixed size. They provide a very flexible tool for representing arbitrary collections - employees in a company, emails in your inbox, etc.
+
+### Dictionaries
+Dictionaries are also known as mappings. A mapping is a collection of objects that stores objects by key instead of by relative position. Mappings map keys to associated values.
+
 ## Naming Convention
 ### Modules
 Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability.
