@@ -17,6 +17,9 @@ Lists are positionally ordered collections of arbitrarily typed object, and they
 ### Dictionaries
 Dictionaries are also known as mappings. A mapping is a collection of objects that stores objects by key instead of by relative position. Mappings map keys to associated values.
 
+### Tuples
+Tuples are sequences that cannot be changed. They are used to represent a fixed collection of items (like a specific calendar date).
+
 ## Naming Convention
 ### Modules
 Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability.
