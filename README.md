@@ -6,6 +6,27 @@ A variable is created when you assign it a value. Variables never need to be dec
 
 Calling a class like a function generates instances of the new type, and the class's methods automatically receive the instance being processed by a given method call (in the `self` argument).
 
+You can access the attributes and methods of a class by using `self`. If you don't use `self` for variables, they will be class variables and will be shared by _all_ instances of the class.
+
+```python
+class Dog:
+    tricks = []             # Class variable shared by all instances.
+
+    def __init__(self, name):
+        self.name = name    # Instance variable unique to each instance.
+```
+
+```python
+class Dog:
+
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []    # Creates a new empty list for each dog.
+
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+```
+
 ## Hierarchy
 - Programs are composed of modules.
 - Modules contain statements.
