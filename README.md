@@ -27,6 +27,42 @@ class Dog:
         self.tricks.append(trick)
 ```
 
+The keyword `global` lets you change names that live outside of the current scope. It tells Python that a function plans to change one or more global names (names that live in the closing module's scope, aka namespace).
+
+```python
+X = 88          # Global X
+
+def func():
+    global X
+    X = 99      # Variable outside def
+
+func()
+print(X)        # Prints 99
+```
+
+Even if a variable is not declared at the namespace level, it can be declared as a global variable inside a function with the keyword `global`. By default however, names assigned in functions are local variables.
+
+```python
+y, z = 1, 2         # Global variables in module
+
+def all_global():
+    global x        # Another global variable in module
+    x = y + z
+```
+
+Factory functions (or closures), are used by programs that need to generate event handlers on the fly in response to conditions at runtime. For example, a GUI must define actions according to user inputs that cannot be anticipated when the GUI is built. In such cases, we need a function that creates and returns another function, with information that may vary per function made.
+
+```python
+def maker(N):
+    def action(X):
+        return X ** N       # The function 'action' retains N from enclosing scope
+    return action
+
+f = maker(2)                # Passes 2 to argument N
+f(3)                        # Passes 3 to X. N remembers 2 so 3^2 = 9. Returns 9
+f(4)                        # Returns 16 because 4^2 = 16
+```
+
 ## Hierarchy
 - Programs are composed of modules.
 - Modules contain statements.
