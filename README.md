@@ -83,36 +83,50 @@ Tuples are sequences that cannot be changed. They are used to represent a fixed 
 ### Modules
 Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability.
 
-`file.py`
+```python
+file.py
+```
 
 ### Classes
 Class names should normally use the CapWords convention. The naming convention for functions may be used instead in cases where the interface is documented and used primarily as a callable.
 
-`class MyClass`
+```python
+class MyClass
+```
 
 ### Exceptions
 Since exceptions should be classes, the class naming convention applies here. Use the suffix "Error" on the name if the exception actually is an error.
 
-`CustomError`
+```python
+CustomError
+```
 
 ### Functions and Variables
 Function names should be lowercase, with words separated by underscores as necessary to improve readability.
 
-`def my_function()`
+```python
+def my_function()
+```
 
 Variable names follow the same convention as function names.
 
-`my_variable`
+```python
+my_variable
+```
 
 ### Methods
 Use the function naming convention: lowercase with words separated by underscores as necessary to improve readability.
 
-`def my_method()`
+```python
+def my_method()
+```
 
 ### Constants
 Constants are usually defined on a module level and written in all capital letters with underscores separating words.
 
-`MY_CONSTANT`
+```python
+MY_CONSTANT
+```
 
 ## Debugging
 You can use `py -i file_name.py` from the terminal/command line to run the program in interactive mode. This command will run the program and once it exits, it will allow you to interact with the program (like assign variables, print statements, etc) regardless of whether or not it ran successfully.
