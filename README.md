@@ -40,7 +40,7 @@ func()
 print(X)        # Prints 99
 ```
 
-Even if a variable is not declared at the namespace level, it can be declared as a global variable inside a function with the keyword `global`. By default however, names assigned in functions are local variables.
+Even if a variable is not declared at the namespace level, it can be declared as a global variable inside a function with the keyword `global`. By default however, names assigned in functions are local variables. 
 
 ```python
 y, z = 1, 2         # Global variables in module
