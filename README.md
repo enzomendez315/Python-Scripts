@@ -63,7 +63,7 @@ f(3)                        # Passes 3 to X. N remembers 2 so 3^2 = 9. Returns 9
 f(4)                        # Returns 16 because 4^2 = 16
 ```
 
-The differennce between single-line comments `#Like this` and multi-line comments `"""Like this"""` is that multi-line comments can also be used as docstrings for functions, classes, methods, and modules. Multi-line comments are not just ignored by the interpreter like single-line comments. Instead, they are stored stored in memory and can be accessed later through the `__doc__` attribute.
+The difference between single-line comments `#Like this` and multi-line comments `"""Like this"""` is that multi-line comments can also be used as docstrings for functions, classes, methods, and modules. Multi-line comments are not just ignored by the interpreter like single-line comments. Instead, they are stored in memory and can be accessed later through the `__doc__` attribute.
 
 ```python
 """
