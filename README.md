@@ -63,6 +63,34 @@ f(3)                        # Passes 3 to X. N remembers 2 so 3^2 = 9. Returns 9
 f(4)                        # Returns 16 because 4^2 = 16
 ```
 
+The differennce between single-line comments `#Like this` and multi-line comments `"""Like this"""` is that multi-line comments can also be used as docstrings for functions, classes, methods, and modules. Multi-line comments are not just ignored by the interpreter like single-line comments. Instead, they are stored stored in memory and can be accessed later through the `__doc__` attribute.
+
+```python
+"""
+This is a multi-line comment or docstring.
+You can use it to provide detailed documentation for functions, classes, or modules.
+"""
+def my_function():
+    """This is a docstring for my_function."""
+    return None
+```
+
+```python
+class MyClass:
+    def my_method(self, arg1, arg2):
+        """This is the docstring for my_method.
+
+        This method does something useful and takes two arguments:
+        - arg1: The first argument.
+        - arg2: The second argument.
+
+        Returns:
+            Some result based on the input arguments.
+        """
+        # Method body goes here
+        pass
+```
+
 ## Hierarchy
 - Programs are composed of modules.
 - Modules contain statements.
